@@ -5,8 +5,13 @@ contents:
   - title: PT. Biner Teknologi Indonesia
     role: System Engineer & DevOps Engineer
     description:
-      - Led development of a new chatbot software utilizing large language model
-      - Co-designer of '*Kopilot*' and '*Gemmini*'
+      - Designed, built, and maintained end-to-end CI/CD pipelines using Jenkins and GitLab to shorten deployment processes.
+      - Migrated manual deployment workflows into fully automated pipelines, significantly improving efficiency and reducing human error.
+      - Integrated Docker Buildx for optimized multi-platform container builds and seamless environment delivery.
+      - Implemented SMTP-based deployment notifications across development teams.
+      - Proactively monitored, maintained, and troubleshooted deployment environments to ensure high reliability and uptime.
+      - Collaborated cross-functionally to identify bottlenecks, implement DevOps best practices, and improve deployment performance.
+      - Monitoring, maintaining, and troubleshooting Server-related issues
     date: Nov. 2024 - Ongoing
   - title: PT. Strategic Partner Solution
     role: Axway System Engineer & Axway Support Engineer (Outsourced from PT. Biner Teknologi Indonesia)
@@ -23,12 +28,12 @@ contents:
     role: Data Mining Specialist (Freelance)
     description: 
       - Extracted data from various online sources using web scraping techniques and tools.
-      - My last project was developed a telegram message scraper bot to collect messages from specific telegram chat, channels or groups.
+      - My last project was to developed a telegram message scraper bot to collect messages from specific telegram chats, channels or groups.
     date: Nov. 2023 - Feb. 2024
   - title: Outlier
     role: AI Trainer Freelance (On-demand / Supply-based)
     description: 
-      - Creating prompt then analyze, examine facts, rate, and justify responses of the artificial intelligence.
+      - Creating prompts, then analysing, examining facts, rates, and justifying responses of the artificial intelligence.
     date: Nov. 2023 - Feb. 2024
   - title: PT. Kopi Coder Indonesia
     role: Android Developer Freelance (On-demand basis) & Internship
@@ -40,5 +45,6 @@ contents:
   - title: PT Bee Solution Partners
     role: Network Engineer (Internship)
     description: 
-      - Creating prompt then analyze, examine facts, rate, and justify responses of the artificial intelligence.
-    date: Oct. 2021 - Dec. 2021
+      - Research and delved into the functionalities and applications of Mininet in network simulation.
+      - Configured and set up a virtual network using Mininet for simulation purposes.
+    date: Jan. 2018 - Feb. 2018

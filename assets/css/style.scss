@@ -2,24 +2,29 @@
 ---
 
 :root {
-    --color-background: #fffdfb;
-    --theme1-light: #F6D8CB;
-    --theme1-medium: #a9aa8a;
-    --theme1-dim: #c7ccb1;
-    --theme1-dark: #848469;
-    --theme2-light: #dfdfdf;
-    --theme2-medium: #a9aa8a;
-    --theme2-dim: #dfdfdf;
-    --theme2-dark: #575757;
-    --theme3-light: #FFF8E4;
-    --theme3-medium: #c7ccb1;
-    --theme3-dim: #a9aa8a;
-    --theme3-dark: #848469;
-    --theme4-light: #AABEB6;
-    --theme4-medium: #a9aa8a;
-    --theme4-dim: #dfdfdf;
-    --theme4-dark: #575757;
-    --font-dark: #000000;
+    --color-background: #EDEAE0; /* Alabaster - soft clean background */
+
+    --theme1-light: #E6BC87;  /* Sand - warm highlight */
+    --theme1-medium: #A67B5B; /* Coffee - subtle brown accent */
+    --theme1-dim: #BFBFBF;    /* Gray - neutral secondary */
+    --theme1-dark: #583C43;   /* Eggplant - deep accent */
+
+    --theme2-light: #BFBFBF;  /* Gray - neutral tone */
+    --theme2-medium: #696969; /* Dark Gray - text and icons */
+    --theme2-dim: #E6BC87;    /* Sand - soft accent */
+    --theme2-dark: #583C43;   /* Eggplant - contrast */
+
+    --theme3-light: #F4E8D2;  /* Light Sand - section background */
+    --theme3-medium: #E6BC87; /* Sand - mid tone */
+    --theme3-dim: #A67B5B;    /* Coffee - muted divider */
+    --theme3-dark: #696969;   /* Dark Gray - depth */
+
+    --theme4-light: #A67B5B;  /* Coffee - hero area background */
+    --theme4-medium: #E6BC87; /* Sand - complementary header */
+    --theme4-dim: #EDEAE0;    /* Alabaster - smooth neutral */
+    --theme4-dark: #583C43;   /* Eggplant - bold text/accent */
+
+    --font-dark: #2E2E2E;     /* Softer black for better readability */
 }
 
 html, body {
