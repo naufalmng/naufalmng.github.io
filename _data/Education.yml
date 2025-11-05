@@ -2,17 +2,23 @@ subject: Education
 listing-order: 1
 icon: "/assets/img/graduation-cap.svg"
 contents:
-  - title: Farvard University, PhD in Computer Science
+  - title: Telkom University — Associate Degree in Software Engineering
     description:
-      - Design of a method to build a probabilistic generative model
-      - Development of model calibration algorithm for cross-domain few-shot learning
-    date: Mar. 2019 - Aug. 2023
-  - title: Stanfort University, MA in Computer Science
+      - Lab Assistant, Object Oriented Programming (OOP) Subject
+      - Top 150 Social Project, Innovillage 2022
+      - Mentor, Badan Mentoring of Faculty of Applied Sciences (FASci)
+    grade: "**GPA**: `3.77/4.0`"
+    date: 2020 - 2023
+  - title: Universitas Teknologi Bandung, Bachelor’s Degree in Information Technology
     description:
-      - Development of deep learning algorithms for automatically tracking the facial expressions
-      - Optimizing parameter efficient fine tuning for fairness in medical image analysis
-    grade: "**GPA**: `4.1/4.3`"
-    date: Mar. 2014 - Feb. 2016
-  - title: Kambridge University, BA in Electronic Engineering
-    grade: "**GPA**: `3.9/4.3`"
-    date: Mar. 2010 - Feb. 2014
+      - Focusing on Computer Network Security (CNS) Major
+    date: Currently Pursuing
+  - title: Daarut Tauhiid Vocational High School - Computer and Network Engineering
+    description:
+      - Certified MikroTik Network Associate (MTCNA)
+      - Certified MikroTik Certified RouterOS Engineer (MTCRE)
+      - Member of Student Council Organization (OSIS)
+      - Head of Discipline Division (Provos) in Special Unit of Student Security (Paskibra)
+      - Taekwondo Black Belt 1st Dan Holder
+    grade: "**Average Score**: `90/100`"
+    date: 2016 - 2019

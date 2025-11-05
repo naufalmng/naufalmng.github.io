@@ -4,22 +4,22 @@
 :root {
     --color-background: #fffdfb;
     --theme1-light: #F6D8CB;
-    --theme1-medium: #D0A694;
-    --theme1-dim: #B07D67;
-    --theme1-dark: #8A5843;
-    --theme2-light: #B1B1C2;
-    --theme2-medium: #8888A4;
-    --theme2-dim: #66658C;
-    --theme2-dark: #484776;
+    --theme1-medium: #a9aa8a;
+    --theme1-dim: #c7ccb1;
+    --theme1-dark: #848469;
+    --theme2-light: #dfdfdf;
+    --theme2-medium: #a9aa8a;
+    --theme2-dim: #dfdfdf;
+    --theme2-dark: #575757;
     --theme3-light: #FFF8E4;
-    --theme3-medium: #EBDFBB;
-    --theme3-dim: #C8B887;
-    --theme3-dark: #A8955A;
+    --theme3-medium: #c7ccb1;
+    --theme3-dim: #a9aa8a;
+    --theme3-dark: #848469;
     --theme4-light: #AABEB6;
-    --theme4-medium: #7FA093;
-    --theme4-dim: #5C8876;
-    --theme4-dark: #3D725D;
-    --font-dark: #202424;
+    --theme4-medium: #a9aa8a;
+    --theme4-dim: #dfdfdf;
+    --theme4-dark: #575757;
+    --font-dark: #000000;
 }
 
 html, body {
@@ -119,7 +119,8 @@ a { text-decoration:none; }
             &:hover {
                 img {
                     width: 28px;
-                    filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
+                    filter: brightness(0) saturate(100%) invert(63%) sepia(19%) saturate(950%) hue-rotate(225deg) brightness(90%) contrast(97%);
+                    // filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
                 }
             }
         }

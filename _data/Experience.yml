@@ -2,21 +2,43 @@ subject: Experiences
 listing-order: 2
 icon: "/assets/img/briefcase.svg"
 contents:
-  - title: Nanosoft
-    role: Project Manager
+  - title: PT. Biner Teknologi Indonesia
+    role: System Engineer & DevOps Engineer
     description:
       - Led development of a new chatbot software utilizing large language model
       - Co-designer of '*Kopilot*' and '*Gemmini*'
-    date: Jan. 2024 - Ongoing
-  - title: Amazone
-    role: Senior Software Engineer
+    date: Nov. 2024 - Ongoing
+  - title: PT. Strategic Partner Solution
+    role: Axway System Engineer & Axway Support Engineer (Outsourced from PT. Biner Teknologi Indonesia)
     description: 
       - Built a Java microservice, database schema to manage customer accounts
       - Enhanced internal pipelines to query real-time data from client devices
-    date: Apr. 2016 - Dec. 2018
-  - title: Pacebook
-    role: Software Engineer Intern
+    date: Jan. 2025 - Ongoing
+  - title: PT Pojok Celebes Mandiri (Pointer)
+    role: IT Support Technician (Contract-Based)
     description: 
-      - Designed the dynamic website using React for data visualization
-      - Integrated '*Yolo*' to boost the accuracy of the object detection
-    date: Jul. 2013 - Sep. 2013
+      - set-up, maintenance, troubleshoot, and monitoring computers and networks for Probationary Civil Servant Test (CPNS) and Probationary Government Employees with Employment Agreement Test (CPPPK) in Semarang.
+    date: Oct. 2024 - Dec. 2024
+  - title: Upwork
+    role: Data Mining Specialist (Freelance)
+    description: 
+      - Extracted data from various online sources using web scraping techniques and tools.
+      - My last project was developed a telegram message scraper bot to collect messages from specific telegram chat, channels or groups.
+    date: Nov. 2023 - Feb. 2024
+  - title: Outlier
+    role: AI Trainer Freelance (On-demand / Supply-based)
+    description: 
+      - Creating prompt then analyze, examine facts, rate, and justify responses of the artificial intelligence.
+    date: Nov. 2023 - Feb. 2024
+  - title: PT. Kopi Coder Indonesia
+    role: Android Developer Freelance (On-demand basis) & Internship
+    description: 
+      - Contributed to “E-Puskesmas” app project by developing an E-Puskesmas android application using kotlin programming language.
+      - Contributed to “Hajj Umroh” app project by implementing UI/UX design to the Android app using the kotlin programming language. (Internship)
+      - Developed a testing app for location tagging features of the Hajj Umroh app (Internship)
+    date: Nov. 2023 - Feb. 2024
+  - title: PT Bee Solution Partners
+    role: Network Engineer (Internship)
+    description: 
+      - Creating prompt then analyze, examine facts, rate, and justify responses of the artificial intelligence.
+    date: Oct. 2021 - Dec. 2021
