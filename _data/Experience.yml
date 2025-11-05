@@ -16,8 +16,11 @@ contents:
   - title: PT. Strategic Partner Solution
     role: Axway System Engineer & Axway Support Engineer (Outsourced from PT. Biner Teknologi Indonesia)
     description: 
-      - Built a Java microservice, database schema to manage customer accounts
-      - Enhanced internal pipelines to query real-time data from client devices
+      - Conducted preventive maintenance and created comprehensive system documentation for Axway environments, primarily supporting financial institutions (e.g., Bank IBK Indonesia).
+      - Assisted in the ongoing major version upgrade of Axway API Gateway (from August 2023 to May 2025 release) for Bank Danamon, including hands-on deployment, troubleshooting, and environment validation.
+      - Performed QA API testing using Postman to verify gateway functionalities and ensure API stability.
+      - Collaborated closely with internal teams, client engineers, and Axway principal support to diagnose and resolve issues both remotely and onsite.
+      - Operated within Red Hat Enterprise Linux (RHEL) and Rocky Linux environments, maintaining secure and optimized API Gateway infrastructure.
     date: Jan. 2025 - Ongoing
   - title: PT Pojok Celebes Mandiri (Pointer)
     role: IT Support Technician (Contract-Based)
