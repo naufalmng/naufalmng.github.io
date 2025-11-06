@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   {% assign meta = "" | split: "" %} {% for yml_file in site.data %} {% assign
   meta = meta | push:yml_file[1] %} {% endfor %} {% assign meta = meta | sort:
   'listing-order' %}
@@ -176,7 +176,7 @@
           </li>
           {% endif %} {% if site.blog_url %}
           <li>
-            <a aria-label="My Blog" href="{{ site.blog_url }}">
+            <a aria-label="My Blog" href="https://{{ site.blog_url }}">
               <img
                 src="{{ '/assets/img/house.svg' | prepend: site.baseurl }}"
                 alt="My Blog"
@@ -192,6 +192,13 @@
       <div class="name-zone">
         <h1>{{ site.name }}</h1>
         <h2>{{ site.job }}</h2>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          🌙
+        </button>
       </div>
     </div>
     <div id="contents">

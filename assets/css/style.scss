@@ -2,25 +2,113 @@
 ---
 
 :root {
-    --color-background: #fffdfb;
-    --theme1-light: #F6D8CB;
-    --theme1-medium: #D0A694;
-    --theme1-dim: #B07D67;
-    --theme1-dark: #8A5843;
-    --theme2-light: #B1B1C2;
-    --theme2-medium: #8888A4;
-    --theme2-dim: #66658C;
-    --theme2-dark: #484776;
-    --theme3-light: #FFF8E4;
-    --theme3-medium: #EBDFBB;
-    --theme3-dim: #C8B887;
-    --theme3-dark: #A8955A;
-    --theme4-light: #AABEB6;
-    --theme4-medium: #7FA093;
-    --theme4-dim: #5C8876;
-    --theme4-dark: #3D725D;
-    --font-dark: #202424;
+    --color-background: #fbfaff;
+  
+    --theme1-light: #e8dcff;
+    --theme1-medium: #c4b2ff;
+    --theme1-dim: #a086ff;
+    --theme1-dark: #7b5cff;
+  
+    --theme2-light: #e3dcff;
+    --theme2-medium: #b8a9ff;
+    --theme2-dim: #8d75ff;
+    --theme2-dark: #6240ff;
+  
+    --theme3-light: #f4f0ff;
+    --theme3-medium: #ddd0ff;
+    --theme3-dim: #b7a3ff;
+    --theme3-dark: #7054D9; /* teks highlight baru — ungu elegan & lebih nyatu */
+  
+    --theme4-light: #ded6ff;
+    --theme4-medium: #b5a7ff;
+    --theme4-dim: #8a7aff;
+    --theme4-dark: #5e53b7;
+    --pi-text: #1e1830;
+    --font-dark: #1e1830;
+    --icon-filter: invert(0);
+    --icon-base:  brightness(0) saturate(100%) invert(19%) sepia(9%)
+                saturate(1030%) hue-rotate(215deg) brightness(90%) contrast(88%);
+    --icon-color: #1e1830;
+    --icon-color-hover: #7054D9;
+  }
+  
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    -webkit-mask: var(--icon-url) no-repeat center / contain;
+            mask: var(--icon-url) no-repeat center / contain;
+    background-color: var(--icon-color);
+    transition: background-color .1s ease, transform .18s ease;
+    vertical-align: middle;
+  }  
+/* Tombol toggle */
+.theme-toggle{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: 0;
+    background: var(--theme3-dim);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+  }
+.theme-toggle:hover{ background: var(--theme3-dark); }
+
+  /* Dark mode: cukup override variabel */
+html[data-theme="dark"]{
+    --color-background: #0E0E12;
+  
+    /* primary violet family (judul & accent) */
+    --theme3-light:  #15132A;
+    --theme3-medium: #1C1B33;   /* HEADER bg */
+    --theme3-dim:    #6E5BFF;   /* hover/aksi */
+    --theme3-dark:   #8A73FF;   /* judul utama */
+  
+    /* secondary indigo (chips/TOC/badge) */
+    --theme2-light:  #1E1D33;
+    --theme2-medium: #26243F;   /* chips/TOC bg */
+    --theme2-dim:    #3A3770;
+    --theme2-dark:   #544FA5;   /* subtitle/link */
+  
+    /* supportive deep violet (garis/timeline/ikon) */
+    --theme1-light:  #2C2750;
+    --theme1-medium: #3A3270;
+    --theme1-dim:    #5B48B6;
+    --theme1-dark:   #735BE6;
+  
+    /* optional alt background (panel/section) */
+    --theme4-light:  #17162C;
+    --theme4-medium: #1B1A2F;   /* alternatif header kalau mau lebih gelap */
+    --theme4-dim:    #2B2950;
+    --theme4-dark:   #544FA5;
+    --pi-text: #ffffff;
+    --font-dark: #EFEFF6;
+    --icon-color: #ffffff;
+    --icon-color-hover: #735BE6;
+    --icon-filter: invert(1);
+    // --icon-base:  brightness(0) saturate(100%) invert(84%) sepia(11%)
+    //             saturate(531%) hue-rotate(205deg) brightness(96%) contrast(95%);
+    // --icon-hover: brightness(0) saturate(100%) invert(39%) sepia(48%) saturate(934%) hue-rotate(228deg) brightness(98%) contrast(104%);   
+  }
+.icon:hover, .personal-info img {
+    filter: var(--icon-color-hover);
+    transform: scale(1.18);
+  }
+
+/* Biar <img> icon (hitam) kebaca di dark */
+.personal-info img,
+.subject-icon{
+  filter: var(--icon-filter);
+  transition: filter .2s ease, transform .15s ease, color .2s ease;
 }
+
+/* Terapkan warna dasar jika belum */
+body{ background: var(--color-background); color: var(--font-dark); }
 
 html, body {
     margin:0;
@@ -45,7 +133,7 @@ a { text-decoration:none; }
 #sidebar{ display: none; }
 
 #about, #contents, #footer { text-align:center; }
-
+      
 #about{
     width: 100%;
     z-index: 2;
@@ -92,37 +180,37 @@ a { text-decoration:none; }
     }
 
     .profile-zone .personal-info span { 
-        color: white;
+        color: var(--pi-text);
         display: inline-flex;
         font-size: 0;
         vertical-align: middle;
         clip-path: inset(0 100% 0 0);
         transition: font-size .6s ease-in-out, clip-path .4s;
-        transition-delay: 0s, .45s;
         transition-property: font-size, clip-path;
     }
 
     .profile-zone .personal-info img {
         width:20px;
-        aspect-ratio:1.0;
-        cursor: pointer;
-        vertical-align: middle;
-        transition: all .75s;
-        filter: invert(10%) sepia(4%) saturate(5321%) hue-rotate(201deg) brightness(99%) contrast(90%);
+        aspect-ratio:1/1;
+        vertical-align:middle;
+        cursor:pointer;
+        /* cuma transisi yang perlu, no layout shift */
+        transition: transform .18s ease, filter .18s ease;
+        filter: var(--icon-filter);
     }
-
     .profile-zone .personal-info {
         a {
             display: inline-flex;
             cursor: pointer;
 
-            &:hover {
-                img {
-                    width: 28px;
-                    filter: brightness(0) saturate(100%) invert(63%) sepia(19%) saturate(950%) hue-rotate(225deg) brightness(90%) contrast(97%);
-                    // filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
-                }
-            }
+            // &:hover {
+            //     img {
+            //         transform: scale(1.18);
+            //         filter: var(--icon-color-hover);
+
+            //         // filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
+            //     }
+            // }
         }
 
         li { height: 40px; }
@@ -457,3 +545,14 @@ a { text-decoration:none; }
         img { max-width: 100%; }
     }
 }
+/* Light mode (ikon hitam) */
+#contents .subject-name div img {
+    filter: brightness(0) invert(0);
+    transition: filter 0.2s ease;
+  }
+  
+  /* Dark mode (ikon putih) */
+  html[data-theme="dark"] #contents .subject-name div img {
+    filter: brightness(0) invert(1);
+  }
+  

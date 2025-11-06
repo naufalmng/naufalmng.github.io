@@ -2,20 +2,7 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
 contents:
-  - title: "ChatPPT ([https://chat.opena1.com/](https://chat.openai.com/))"
+  - title: "Telegram-Sleuth ([https://github.com/naufalmng/telegram-sleuth](https://github.com/naufalmng/telegram-sleuth))"
     description: 
-      - Chatbot developed based on a large language model
-      - Designed Generative algorithm to generate novel human-like content
-      - "Technology Used: Rust, Typescript, Python, Ruby"
-    image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
-  - title: "AW5-cli ([https://github.com/aw5/aw5-cli](https://github.com/aws/aws-cli))"
-    description: 
-      - Universal Command Line Interface for Amazone Web Services
-      - Developed a scheme to facilitate users’ authentication without having to remember their credentials
-      - "Technology Used: Typescript, Python, Go"
-    image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
-  - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))" 
-    description: 
-      - Machine learning library for applications such as computer vision and natural language processing
-      - "Technology Used: Python, Cuda, Objective-C++"
-    image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+      - Developed the open-source Python library Telegram Sleuth, enabling extraction of messages, media, and metadata from Telegram chats and channels. The tool structures data by user timeline and exports clean CSV datasets to facilitate research, analytics, and automation workflows. Licensed under GPL v3.
+    image: "![](https://camo.githubusercontent.com/c54753cea0bc1f1b35831290e14cb809c609b86aaeeea4d607e8604ad29a2cc2/68747470733a2f2f692e6962622e636f2f53634747585a4c2f736c657574682e706e67)"
