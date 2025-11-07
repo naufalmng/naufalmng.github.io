@@ -413,6 +413,18 @@ a { text-decoration:none; }
 }
 
 @media (min-width:768px) {
+    .theme-toggle {
+        /* basic look; position will be overridden by JS inline styles */
+        background: var(--theme3-dim);
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: none;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        font-size: 14px;
+        line-height: 1;
+        cursor: pointer;
+      }
     body::before {
         content:"";
         display: block;
@@ -555,4 +567,69 @@ a { text-decoration:none; }
   html[data-theme="dark"] #contents .subject-name div img {
     filter: brightness(0) invert(1);
   }
+
+  #sidebar { display: block; } /* ensure not hidden by earlier rules */
+
+  @media (max-width: 767px) {
+    /* fixed right small sidebar */
+    #sidebar {
+      display: block !important;
+      position: fixed;
+      right: 10px;          /* gap from right edge */
+      top: 160px;           /* default; JS will update to match header */
+      width: 92px;          /* compact column */
+      max-width: 28%;
+      z-index: 1200;
+      padding: 6px 4px;
+      background: transparent;
+      box-shadow: none;
+      overflow: visible;
+      pointer-events: auto;
+      transform: none !important; /* override any off-canvas transforms */
+    }
   
+    /* compact vertical list */
+    #sidebar ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      align-items: flex-end;
+    }
+  
+    #sidebar li {
+      margin: 0;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--theme3-medium);
+      font-size: 13px;
+      min-width: 72px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #sidebar li a { color: var(--font-dark); display:inline-block; }
+  
+    #sidebar li:hover, #sidebar li.active { background: var(--theme1-medium); }
+  
+    /* prevent content from being obscured by the fixed sidebar */
+    #contents {
+      padding-right: calc(92px + 32px); /* equals sidebar width + breathing room */
+      box-sizing: border-box;
+      width: 92%;
+      margin-left: 4%;
+    }
+  
+    /* ensure header area doesn't overlap with sidebar */
+    .name-zone { padding-right: 120px; }
+  
+    /* very small screens */
+    @media (max-width: 360px) {
+      #sidebar { width: 80px; }
+      #sidebar li { min-width: 64px; font-size: 12px; padding:6px 8px; }
+      #contents { padding-right: calc(80px + 24px); }
+      .name-zone { padding-right: 100px; }
+    }
+  }
